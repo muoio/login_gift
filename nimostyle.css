@@ -43,8 +43,8 @@
   top: 1px;
 }
 .nimo-message-notice.move-up-leave.move-up-leave-active {
-  -webkit-animation-duration: 0.00001s!important;
-  animation-duration: 0.00001s!important;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
   -webkit-animation-name: MessageMoveOut;
   animation-name: MessageMoveOut;
   overflow: hidden;
@@ -102,8 +102,8 @@
   }
 }
 .nimo-loading-linear {
-  -webkit-animation: rotation 0.00001s linear 0.00001s infinite forwards;
-  animation: rotation 0.00001s linear 0.00001s infinite forwards;
+  -webkit-animation: rotation 0.7s linear 0s infinite forwards;
+  animation: rotation 0.7s linear 0s infinite forwards;
   border: 2.5px solid transparent;
   border-radius: 50%;
   border-right-color: #666;
@@ -157,8 +157,8 @@
   position: relative;
   text-align: center;
   touch-action: manipulation;
-  -webkit-transition: all 0.00001s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: all 0.00001s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -202,8 +202,8 @@
   padding: 0 7px;
 }
 .nimo-btn.nimo-btn-clicked:after {
-  -webkit-animation: buttonEffect 0.00001s;
-  animation: buttonEffect 0.00001s;
+  -webkit-animation: buttonEffect 0.4s;
+  animation: buttonEffect 0.4s;
   border: 0 solid transparent;
   border-radius: inherit;
   bottom: -1px;
@@ -880,13 +880,13 @@
   position: absolute;
   right: -1px;
   top: -1px;
-  -webkit-transition: opacity 0.00001s;
-  transition: opacity 0.00001s;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
   z-index: 1;
 }
 .nimo-btn .nimo-icon {
-  -webkit-transition: margin-left 0.00001s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: margin-left 0.00001s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -webkit-transition: margin-left 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: margin-left 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 .nimo-btn > .nimo-icon + span,
 .nimo-btn > span + .nimo-icon {
@@ -976,8 +976,8 @@ a.nimo-btn-sm {
   right: 0;
   text-decoration: none;
   top: 0;
-  -webkit-transition: color 0.00001s;
-  transition: color 0.00001s;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
   z-index: 10;
 }
 .nimo-modal-close-x {
@@ -1051,8 +1051,8 @@ a.nimo-btn-sm {
 }
 .nimo-modal.zoom-appear,
 .nimo-modal.zoom-enter {
-  -webkit-animation-duration: 0.00001s!important;
-  animation-duration: 0.00001s!important;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
   opacity: 0;
   -webkit-transform: none;
   transform: none;
@@ -1290,7 +1290,7 @@ a.nimo-btn-sm {
   font-family: swiper-icons;
   font-style: normal;
   font-weight: 400;
-  src: url("data:application/font-woff;charset=utf-8;base64, d09GRgABAAAAAAZgABAAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAAGRAAAABoAAAAci6qHkUdERUYAAAWgAAAAIwAAACQAYABXR1BPUwAABhQAAAAuAAAANuAY7+xHU1VCAAAFxAAAAFAAAABm2fPczU9TLzIAAAHcAAAASgAAAGBP9V5RY21hcAAAAkQAAACIAAABYt6F0cBjdnQgAAACzAAAAAQAAAAEABEBRGdhc3AAAAWYAAAACAAAAAj//wADZ2x5ZgAAAywAAADMAAAD2MHtryVoZWFkAAABbAAAADAAAAA2E2+eoWhoZWEAAAGcAAAAHwAAACQC9gDzaG10eAAAAigAAAAZAAAArgJkABFsb2NhAAAC0AAAAFoAAABaFQAUGG1heHAAAAG8AAAAHwAAACAAcABAbmFtZQAAA/gAAAE5AAACXvFdBwlwb3N0AAAFNAAAAGIAAACE0.00001s74hXjaY2BkYGAAYpf5Hu/j+W2+MnAzMYDAzaX6QjD6/4//Bxj5GA8AuRwMYGkAPywL13jaY2BkYGA88P8Agx4j+/8fQDYfA1AEBWgDAIB2BOoAeNpjYGRgYNBh4GdgYgABEMnIABJzYNADCQAACWgAsQB42mNgYfzCOIGBlYGB0YcxjYGBwR1Kf2WQZGhhYGBiYGVmgAFGBiQQkOaawtDAoMBQxXjg/wEGPcYDDA4wNUA2CCgwsAAAO4EL6gAAeNpj2M0gyAACqxgGNWBkZ2D4/wMA+xkDdgAAAHjaY2BgYGaAYBkGRgYQiAHyGMF8FgYHIM3DwMHABGQrMOgyWDLEM1T9/w8UBfEMgLzE////P/5//f/V/xv+r4eaAAeMbAxwIUYmIMHEgKYAYjUcsDAwsLKxc3BycfPw8jEQA/gZBASFhEVExcQlJKWkZWTl5BUUlZRVVNXUNTQZBgMAAMR+E+gAEQFEAAAAKgAqACoANAA+AEgAUgBcAGYAcAB6AIQAjgCYAKIArAC2AMAAygDUAN4A6ADyAPwBBgEQARoBJAEuATgBQgFMAVYBYAFqAXQBfgGIAZIBnAGmAbIBzgHsAAB42u2NMQ6CUAyGW568x9AneYYgm4MJbhKFaExIOAVX8ApewSt4Bic4AfeAid3VOBixDxfPYEza5O+Xfi04YADggiUIULCuEJK8VhO4bSvpdnktHI5QCYtdi0.00001sl8ZnXaHlqUrNKzdKcT8cjlq+rwZSvIVczNiezsfnP/uznmfPFBNODM2K7MTQ45YEAZqGP81AmGGcF3iPqOop0r0.00001sPTaTbVkfUe4HXj97wYE+yNwWYxwWu4v1ugWHgo0.00001s1XdZEVqWM7ET0cfnLGxWfkgR42o2PvWrDMBSFj/IHLaF0zKjRgdiVMwScNRAoWUoH78Y2icB/yIY09An6AH2Bdu/UB+yxopYshQiEvnvu0dURgDt8QeC8PDw7Fpji3fEA4z/PEJ6YOB5hKh4dj3EvXhxPqH/SKUY3rJ0.00001srZ4FZnh1PMAtPhwP6fl2PMJMPDgeQ4rY8YT6Gzao0eAEA409DuggmTnFnOcSCiEiLMgxCiTI6Cq5DZUd3Qmp10vO0LaLTd2cjN4fOumlc7lUYbSQcZFkutRG7g6JKZKy0RmdLY680CDnEJ+UMkpFFe1RN7nxdVpXrC4aTtnaurOnYercZg2YVmLN/d/gczfEimrE/fs/bOuq29Zmn8tloORaXgZgGa78yO9/cnXm2BpaGvq25Dv0.00001s4E90.00001sIc9PqupJKhYFSSl47+Qcr1mYNAAAAeNptw0cKwkAAAMDZJA8Q7OUJvkLsPfZ6zFVERPy8qHh2YER+3i/BP83vIBLLySsoKimrqKqpa2hp6+jq6RsYGhmbmJqZSy0.00001sraxtbO0.00001sHRydnEMU4uR6yx7JJXveP7WrDycAAAAAAAH//wACeNpjYGRgYOABYhkgZgJCZgZNBkYGLQZtIJsFLMYAAAw3ALgAeNolizEKgDAQBCchRbC0.00001sFER0YD6qVQiBCv/H9ezGI6Z5XBAw8CBK/m5iQQVauVbXLnOrMZv2oLdKFa8Pjuru2hJzGabmOSLzNMzvutpB3N42mNgZGBg4GKQYzBhYMxJLMlj4GBgAYow/P/PAJJhLM0.00001sSoWKfWCAAwDAjgbRAAB42mNgYGBkAIIbCZo5IPrmUn0hGA0AO8EFTQAA")
+  src: url("data:application/font-woff;charset=utf-8;base64, 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")
     format("woff");
 }
 :root {
@@ -1472,8 +1472,8 @@ a.nimo-btn-sm {
   text-align: center;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
-  -webkit-transition: opacity 0.00001s;
-  transition: opacity 0.00001s;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
   z-index: 10;
 }
 .swiper-pagination.swiper-pagination-hidden {
@@ -1564,8 +1564,8 @@ button.swiper-pagination-bullet {
   > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic
   .swiper-pagination-bullet {
   display: inline-block;
-  -webkit-transition: transform 0.00001s, top 0.00001s;
-  transition: transform 0.00001s, top 0.00001s;
+  -webkit-transition: transform 0.2s, top 0.2s;
+  transition: transform 0.2s, top 0.2s;
 }
 .swiper-container-horizontal
   > .swiper-pagination-bullets
@@ -1582,14 +1582,14 @@ button.swiper-pagination-bullet {
 .swiper-container-horizontal
   > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic
   .swiper-pagination-bullet {
-  -webkit-transition: transform 0.00001s, left 0.00001s;
-  transition: transform 0.00001s, left 0.00001s;
+  -webkit-transition: transform 0.2s, left 0.2s;
+  transition: transform 0.2s, left 0.2s;
 }
 .swiper-container-horizontal.swiper-container-rtl
   > .swiper-pagination-bullets-dynamic
   .swiper-pagination-bullet {
-  -webkit-transition: transform 0.00001s, right 0.00001s;
-  transition: transform 0.00001s, right 0.00001s;
+  -webkit-transition: transform 0.2s, right 0.2s;
+  transition: transform 0.2s, right 0.2s;
 }
 .swiper-pagination-progressbar {
   background: rgba(0, 0, 0, 0.25);
@@ -1649,7 +1649,7 @@ button.swiper-pagination-bullet {
   margin: 10px 0;
 }
 .nimo-empty .nimo-icon-empty {
-  background: url(https://www.nimo.tv/nms/images/no-info-new.67eae86c7e52cb7dd6404c781d7b43ad.png)
+  background: url(//www.nimo.tv/nms/images/no-info-new.67eae86c7e52cb7dd6404c781d7b43ad.png)
     no-repeat;
   background-size: contain;
   display: block;
@@ -1658,7 +1658,7 @@ button.swiper-pagination-bullet {
   width: 100px;
 }
 .nimo-theme-dark .nimo-empty .nimo-icon-empty {
-  background-image: url(https://www.nimo.tv/nms/images/no-info-new-dark.192826eb16333682fed7a88d427a5e9f.png);
+  background-image: url(//www.nimo.tv/nms/images/no-info-new-dark.192826eb16333682fed7a88d427a5e9f.png);
 }
 .nimo-currency__icon {
   background-position: 50%;
@@ -1669,16 +1669,16 @@ button.swiper-pagination-bullet {
   width: 18px;
 }
 .nimo-currency__icon.diamond {
-  background-image: url(https://www.nimo.tv/nms/images/diamond.85fe32d159d54313433a83e95368ca37.png);
+  background-image: url(//www.nimo.tv/nms/images/diamond.85fe32d159d54313433a83e95368ca37.png);
 }
 .nimo-currency__icon.coin {
-  background-image: url(https://www.nimo.tv/nms/images/coin@3x.96fd880fcde877a79e42c1ac3480977b.png);
+  background-image: url(//www.nimo.tv/nms/images/coin@3x.96fd880fcde877a79e42c1ac3480977b.png);
 }
 .nimo-currency__icon.r_diamond {
-  background-image: url(https://www.nimo.tv/nms/images/rdiamond.90f041b56213a05b9fbf257caff9fa11.png);
+  background-image: url(//www.nimo.tv/nms/images/rdiamond.90f041b56213a05b9fbf257caff9fa11.png);
 }
 .nimo-currency__icon.chips {
-  background-image: url(https://www.nimo.tv/nms/images/gold_bean.5234d1ace2c1c7675b890755ef8c3381.png);
+  background-image: url(//www.nimo.tv/nms/images/gold_bean.5234d1ace2c1c7675b890755ef8c3381.png);
 }
 .nimo-currency__icon.sm {
   height: 14px;
@@ -1746,10 +1746,10 @@ button.swiper-pagination-bullet {
 }
 .nimo-select-arrow:before {
   content: "\e61a";
-  -webkit-transition: -webkit-transform 0.00001s;
-  transition: -webkit-transform 0.00001s;
-  transition: transform 0.00001s;
-  transition: transform 0.00001s, -webkit-transform 0.00001s;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 .nimo-select-selection {
   background-color: #fcfcfc;
@@ -1767,10 +1767,10 @@ button.swiper-pagination-bullet {
   outline: none;
   padding: 0;
   position: relative;
-  -webkit-transition: all 0.00001s;
-  transition: all 0.00001s;
-  -webkit-transition: all 0.00001s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: all 0.00001s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1886,8 +1886,8 @@ button.swiper-pagination-bullet {
   text-align: center;
   text-transform: none;
   top: 50%;
-  -webkit-transition: color 0.00001s ease, opacity 0.00001s ease;
-  transition: color 0.00001s ease, opacity 0.00001s ease;
+  -webkit-transition: color 0.3s ease, opacity 0.15s ease;
+  transition: color 0.3s ease, opacity 0.15s ease;
   vertical-align: baseline;
   width: 16px;
   z-index: 1;
@@ -2180,8 +2180,8 @@ button.swiper-pagination-bullet {
   overflow: hidden;
   padding: 0 24px 0 10px;
   position: relative;
-  -webkit-transition: padding 0.00001s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: padding 0.00001s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -webkit-transition: padding 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: padding 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 .nimo-select-selection--multiple .nimo-select-selection__choice__disabled {
   padding: 0 10px;
@@ -2195,8 +2195,8 @@ button.swiper-pagination-bullet {
   max-width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
-  -webkit-transition: margin 0.00001s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: margin 0.00001s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -webkit-transition: margin 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: margin 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   white-space: nowrap;
 }
 .nimo-select-selection--multiple .nimo-select-selection__choice__remove {
@@ -2213,8 +2213,8 @@ button.swiper-pagination-bullet {
   line-height: inherit;
   position: absolute;
   right: 4px;
-  -webkit-transition: all 0.00001s;
-  transition: all 0.00001s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .nimo-select-selection--multiple .nimo-select-selection__choice__remove:hover {
   color: #404040;
@@ -2282,8 +2282,8 @@ button.swiper-pagination-bullet {
   box-shadow: none;
   height: 100%;
   position: relative;
-  -webkit-transition: all 0.00001s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: all 0.00001s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   width: 100%;
   z-index: 1;
 }
@@ -2380,8 +2380,8 @@ button.swiper-pagination-bullet {
   padding: 8px 11px;
   position: relative;
   text-overflow: ellipsis;
-  -webkit-transition: background 0.00001s ease;
-  transition: background 0.00001s ease;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
   white-space: nowrap;
 }
 .nimo-select-dropdown-menu-item:hover {
@@ -2432,8 +2432,8 @@ button.swiper-pagination-bullet {
   transform: scale("") rotate(0deg);
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
-  -webkit-transition: all 0.00001s ease;
-  transition: all 0.00001s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 :root .nimo-select-dropdown--multiple .nimo-select-dropdown-menu-item:after {
   font-size: 12px;
@@ -2640,8 +2640,8 @@ button.swiper-pagination-bullet {
   list-style: none;
   padding: 4px 11px;
   position: relative;
-  -webkit-transition: all 0.00001s;
-  transition: all 0.00001s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   width: 100%;
 }
 .nimo-input::-moz-placeholder {
@@ -2755,8 +2755,8 @@ textarea.nimo-input {
   height: auto;
   max-width: 100%;
   min-height: 38px;
-  -webkit-transition: all 0.00001s, height 0.00001s;
-  transition: all 0.00001s, height 0.00001s;
+  -webkit-transition: all 0.3s, height 0s;
+  transition: all 0.3s, height 0s;
   vertical-align: bottom;
 }
 .nimo-theme-dark .nimo-input {
@@ -2980,10 +2980,10 @@ label:hover .nimo-checkbox__disabled .nimo-checkbox-unchecked-circle {
   font-size: 12px;
 }
 .nimo-dropdown-wrap .nimo-icon-down:before {
-  -webkit-transition: -webkit-transform 0.00001s;
-  transition: -webkit-transform 0.00001s;
-  transition: transform 0.00001s;
-  transition: transform 0.00001s, -webkit-transform 0.00001s;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
 }
 .nimo-dropdown-wrap-open .nimo-icon-down:before {
   -webkit-transform: rotate(180deg);
@@ -3009,8 +3009,8 @@ label:hover .nimo-checkbox__disabled .nimo-checkbox-unchecked-circle {
 .nimo-dropdown-menu-item-group-title {
   color: #919191;
   padding: 5px 12px;
-  -webkit-transition: all 0.00001s;
-  transition: all 0.00001s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .nimo-dropdown-menu-submenu-popup {
   position: absolute;
@@ -3026,8 +3026,8 @@ label:hover .nimo-checkbox__disabled .nimo-checkbox-unchecked-circle {
   line-height: 22px;
   margin: 0;
   padding: 0 15px;
-  -webkit-transition: all 0.00001s;
-  transition: all 0.00001s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   white-space: nowrap;
 }
 .nimo-dropdown-menu-item > a,
@@ -3036,8 +3036,8 @@ label:hover .nimo-checkbox__disabled .nimo-checkbox-unchecked-circle {
   display: block;
   margin: -17px;
   padding: 5px 12px;
-  -webkit-transition: all 0.00001s;
-  transition: all 0.00001s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .nimo-dropdown-menu-item > a:focus,
 .nimo-dropdown-menu-submenu-title > a:focus {
@@ -3306,8 +3306,8 @@ label:hover .nimo-checkbox__disabled .nimo-checkbox-unchecked-circle {
   color: #5a5a5a;
   overflow: hidden;
   padding: 0;
-  -webkit-transition: height, 0.00001s;
-  transition: height, 0.00001s;
+  -webkit-transition: height, 0.5s;
+  transition: height, 0.5s;
 }
 .nimo-menu-submenu-item.nimo-menu-show-sub {
   display: none;
@@ -3329,8 +3329,8 @@ label:hover .nimo-checkbox__disabled .nimo-checkbox-unchecked-circle {
   width: 100%;
 }
 .nimo-author-avatar .nimo-liveing-animation {
-  -webkit-animation-duration: 0.00001s!important;
-  animation-duration: 0.00001s!important;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   -webkit-animation-name: live;
@@ -3392,15 +3392,15 @@ label:hover .nimo-checkbox__disabled .nimo-checkbox-unchecked-circle {
   }
 }
 .nimo-live-gif {
-  -webkit-animation-duration: 0.00001s!important;
-  animation-duration: 0.00001s!important;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   -webkit-animation-name: nimo-live-gif;
   animation-name: nimo-live-gif;
   -webkit-animation-timing-function: steps(20);
   animation-timing-function: steps(20);
-  background-image: url(https://www.nimo.tv/nms/images/online.68d3d021c8cb2d3c4136b24f8c4133a6.png);
+  background-image: url(//www.nimo.tv/nms/images/online.68d3d021c8cb2d3c4136b24f8c4133a6.png);
   content: "";
   display: inline-block;
   height: 15px;
@@ -3408,7 +3408,7 @@ label:hover .nimo-checkbox__disabled .nimo-checkbox-unchecked-circle {
   width: 16px;
 }
 .nimo-live-gif.white {
-  background-image: url(https://www.nimo.tv/nms/images/online-white.b9f2b542ad79f0600dd2fe35c906f2e1.png);
+  background-image: url(//www.nimo.tv/nms/images/online-white.b9f2b542ad79f0600dd2fe35c906f2e1.png);
 }
 @-webkit-keyframes nimo-live-gif {
   0% {
@@ -3449,8 +3449,8 @@ label:hover .nimo-checkbox__disabled .nimo-checkbox-unchecked-circle {
   width: 100%;
 }
 .components_toastLoading .sk-fading-circle .sk-circle:before {
-  -webkit-animation: sk-circleFadeDelay 0.00001s ease-in-out infinite both;
-  animation: sk-circleFadeDelay 0.00001s ease-in-out infinite both;
+  -webkit-animation: sk-circleFadeDelay 1.2s ease-in-out infinite both;
+  animation: sk-circleFadeDelay 1.2s ease-in-out infinite both;
   background-color: #622df7;
   border-radius: 100%;
   content: "";
@@ -3504,48 +3504,48 @@ label:hover .nimo-checkbox__disabled .nimo-checkbox-unchecked-circle {
   transform: rotate(330deg);
 }
 .components_toastLoading .sk-fading-circle .sk-circle2:before {
-  -webkit-animation-delay: -3s;
-  animation-delay: -3s;
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
 }
 .components_toastLoading .sk-fading-circle .sk-circle3:before {
-  -webkit-animation-delay: -3s;
-  animation-delay: -3s;
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
 }
 .components_toastLoading .sk-fading-circle .sk-circle4:before {
-  -webkit-animation-delay: -3s;
-  animation-delay: -3s;
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
 }
 .components_toastLoading .sk-fading-circle .sk-circle5:before {
-  -webkit-animation-delay: -3s;
-  animation-delay: -3s;
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
 }
 .components_toastLoading .sk-fading-circle .sk-circle6:before {
-  -webkit-animation-delay: -3s;
-  animation-delay: -3s;
+  -webkit-animation-delay: -0.7s;
+  animation-delay: -0.7s;
 }
 .components_toastLoading .sk-fading-circle .sk-circle7:before {
-  -webkit-animation-delay: -3s;
-  animation-delay: -3s;
+  -webkit-animation-delay: -0.6s;
+  animation-delay: -0.6s;
 }
 .components_toastLoading .sk-fading-circle .sk-circle8:before {
-  -webkit-animation-delay: -3s;
-  animation-delay: -3s;
+  -webkit-animation-delay: -0.5s;
+  animation-delay: -0.5s;
 }
 .components_toastLoading .sk-fading-circle .sk-circle9:before {
-  -webkit-animation-delay: -3s;
-  animation-delay: -3s;
+  -webkit-animation-delay: -0.4s;
+  animation-delay: -0.4s;
 }
 .components_toastLoading .sk-fading-circle .sk-circle10:before {
-  -webkit-animation-delay: -3s;
-  animation-delay: -3s;
+  -webkit-animation-delay: -0.3s;
+  animation-delay: -0.3s;
 }
 .components_toastLoading .sk-fading-circle .sk-circle11:before {
-  -webkit-animation-delay: -3s;
-  animation-delay: -3s;
+  -webkit-animation-delay: -0.2s;
+  animation-delay: -0.2s;
 }
 .components_toastLoading .sk-fading-circle .sk-circle12:before {
-  -webkit-animation-delay: -3s;
-  animation-delay: -3s;
+  -webkit-animation-delay: -0.1s;
+  animation-delay: -0.1s;
 }
 @-webkit-keyframes sk-circleFadeDelay {
   0%,
@@ -6285,8 +6285,8 @@ body {
 .fade-appear,
 .fade-enter,
 .fade-leave {
-  -webkit-animation-duration: 0.00001s!important;
-  animation-duration: 0.00001s!important;
+  -webkit-animation-duration: 0.2s;
+  animation-duration: 0.2s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-play-state: paused;
@@ -6351,8 +6351,8 @@ body {
 .move-up-appear,
 .move-up-enter,
 .move-up-leave {
-  -webkit-animation-duration: 0.00001s!important;
-  animation-duration: 0.00001s!important;
+  -webkit-animation-duration: 0.2s;
+  animation-duration: 0.2s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-play-state: paused;
@@ -6385,8 +6385,8 @@ body {
 .move-down-appear,
 .move-down-enter,
 .move-down-leave {
-  -webkit-animation-duration: 0.00001s!important;
-  animation-duration: 0.00001s!important;
+  -webkit-animation-duration: 0.2s;
+  animation-duration: 0.2s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-play-state: paused;
@@ -6419,8 +6419,8 @@ body {
 .move-left-appear,
 .move-left-enter,
 .move-left-leave {
-  -webkit-animation-duration: 0.00001s!important;
-  animation-duration: 0.00001s!important;
+  -webkit-animation-duration: 0.2s;
+  animation-duration: 0.2s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-play-state: paused;
@@ -6453,8 +6453,8 @@ body {
 .move-right-appear,
 .move-right-enter,
 .move-right-leave {
-  -webkit-animation-duration: 0.00001s!important;
-  animation-duration: 0.00001s!important;
+  -webkit-animation-duration: 0.2s;
+  animation-duration: 0.2s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-play-state: paused;
@@ -6798,8 +6798,8 @@ body {
 }
 .shake-appear,
 .shake-enter {
-  -webkit-animation-duration: 0.00001s!important;
-  animation-duration: 0.00001s!important;
+  -webkit-animation-duration: 0.2s;
+  animation-duration: 0.2s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-iteration-count: infinite;
@@ -6901,8 +6901,8 @@ body {
 .slide-up-appear,
 .slide-up-enter,
 .slide-up-leave {
-  -webkit-animation-duration: 0.00001s!important;
-  animation-duration: 0.00001s!important;
+  -webkit-animation-duration: 0.2s;
+  animation-duration: 0.2s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-play-state: paused;
@@ -6935,8 +6935,8 @@ body {
 .slide-down-appear,
 .slide-down-enter,
 .slide-down-leave {
-  -webkit-animation-duration: 0.00001s!important;
-  animation-duration: 0.00001s!important;
+  -webkit-animation-duration: 0.2s;
+  animation-duration: 0.2s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-play-state: paused;
@@ -6969,8 +6969,8 @@ body {
 .slide-left-appear,
 .slide-left-enter,
 .slide-left-leave {
-  -webkit-animation-duration: 0.00001s!important;
-  animation-duration: 0.00001s!important;
+  -webkit-animation-duration: 0.2s;
+  animation-duration: 0.2s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-play-state: paused;
@@ -7003,8 +7003,8 @@ body {
 .slide-right-appear,
 .slide-right-enter,
 .slide-right-leave {
-  -webkit-animation-duration: 0.00001s!important;
-  animation-duration: 0.00001s!important;
+  -webkit-animation-duration: 0.2s;
+  animation-duration: 0.2s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-play-state: paused;
@@ -7292,8 +7292,8 @@ body {
 }
 .swing-appear,
 .swing-enter {
-  -webkit-animation-duration: 0.00001s!important;
-  animation-duration: 0.00001s!important;
+  -webkit-animation-duration: 0.2s;
+  animation-duration: 0.2s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-play-state: paused;
@@ -7355,8 +7355,8 @@ body {
 .zoom-appear,
 .zoom-enter,
 .zoom-leave {
-  -webkit-animation-duration: 0.00001s!important;
-  animation-duration: 0.00001s!important;
+  -webkit-animation-duration: 0.2s;
+  animation-duration: 0.2s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-play-state: paused;
@@ -7390,8 +7390,8 @@ body {
 .zoom-big-appear,
 .zoom-big-enter,
 .zoom-big-leave {
-  -webkit-animation-duration: 0.00001s!important;
-  animation-duration: 0.00001s!important;
+  -webkit-animation-duration: 0.2s;
+  animation-duration: 0.2s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-play-state: paused;
@@ -7425,8 +7425,8 @@ body {
 .zoom-big-fast-appear,
 .zoom-big-fast-enter,
 .zoom-big-fast-leave {
-  -webkit-animation-duration: 0.00001s!important;
-  animation-duration: 0.00001s!important;
+  -webkit-animation-duration: 0.1s;
+  animation-duration: 0.1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-play-state: paused;
@@ -7460,8 +7460,8 @@ body {
 .zoom-up-appear,
 .zoom-up-enter,
 .zoom-up-leave {
-  -webkit-animation-duration: 0.00001s!important;
-  animation-duration: 0.00001s!important;
+  -webkit-animation-duration: 0.2s;
+  animation-duration: 0.2s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-play-state: paused;
@@ -7495,8 +7495,8 @@ body {
 .zoom-down-appear,
 .zoom-down-enter,
 .zoom-down-leave {
-  -webkit-animation-duration: 0.00001s!important;
-  animation-duration: 0.00001s!important;
+  -webkit-animation-duration: 0.2s;
+  animation-duration: 0.2s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-play-state: paused;
@@ -7530,8 +7530,8 @@ body {
 .zoom-left-appear,
 .zoom-left-enter,
 .zoom-left-leave {
-  -webkit-animation-duration: 0.00001s!important;
-  animation-duration: 0.00001s!important;
+  -webkit-animation-duration: 0.2s;
+  animation-duration: 0.2s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-play-state: paused;
@@ -7565,8 +7565,8 @@ body {
 .zoom-right-appear,
 .zoom-right-enter,
 .zoom-right-leave {
-  -webkit-animation-duration: 0.00001s!important;
-  animation-duration: 0.00001s!important;
+  -webkit-animation-duration: 0.2s;
+  animation-duration: 0.2s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-play-state: paused;
@@ -7930,14 +7930,14 @@ body {
 @font-face {
   font-display: swap;
   font-family: nimoicon;
-  src: url(https://www.nimo.tv/nms/fonts/iconfont.bea24c8.eot);
-  src: url(https://www.nimo.tv/nms/fonts/iconfont.61542dc.woff) format("woff"),
-    url(https://www.nimo.tv/nms/fonts/iconfont.9cfe96e.ttf) format("truetype"),
-    url(https://www.nimo.tv/nms/fonts/iconfont.898bb2c.svg#iconfont) format("svg");
+  src: url(//www.nimo.tv/nms/fonts/iconfont.bea24c8.eot);
+  src: url(//www.nimo.tv/nms/fonts/iconfont.61542dc.woff) format("woff"),
+    url(//www.nimo.tv/nms/fonts/iconfont.9cfe96e.ttf) format("truetype"),
+    url(//www.nimo.tv/nms/fonts/iconfont.898bb2c.svg#iconfont) format("svg");
 }
 .nimo-icon-spin:before {
-  -webkit-animation: loadingCircle 0.00001s linear infinite;
-  animation: loadingCircle 0.00001s linear infinite;
+  -webkit-animation: loadingCircle 1s linear infinite;
+  animation: loadingCircle 1s linear infinite;
   display: inline-block;
 }
 .nimo-icon-rotate:before {
@@ -8004,8 +8004,8 @@ body {
 }
 .n-sk,
 .n-sk-black {
-  -webkit-animation: nimoSkeletonGradient 0.00001s linear 0.00001s infinite;
-  animation: nimoSkeletonGradient 0.00001s linear 0.00001s infinite;
+  -webkit-animation: nimoSkeletonGradient 4s linear 0.5s infinite;
+  animation: nimoSkeletonGradient 4s linear 0.5s infinite;
   background-size: 400%;
 }
 .n-sk {
@@ -9707,7 +9707,7 @@ body::-webkit-scrollbar-thumb {
   top: 212.625px;
 }
 .slots-panel__currency {
-  background: url(https://www.nimo.tv/nms/images/currency-select.dd2debacad5dfc5a20ff776809df9f66.png)
+  background: url(//www.nimo.tv/nms/images/currency-select.dd2debacad5dfc5a20ff776809df9f66.png)
     no-repeat 50%/100% 100%;
   height: 25.3125px;
   left: 0;
@@ -9730,7 +9730,7 @@ body::-webkit-scrollbar-thumb {
   padding: 0 27px 0 33.75px;
 }
 .slots-panel__account-balance.not-alowed .slots-panel__currency {
-  background: url(https://www.nimo.tv/nms/images/currency-select-disabled.8c3e152de656bac3d405c9c98db604fd.png)
+  background: url(//www.nimo.tv/nms/images/currency-select-disabled.8c3e152de656bac3d405c9c98db604fd.png)
     no-repeat 50%/100% 100%;
 }
 .slots-panel__dropdown.nimo-dropdown {
@@ -9751,7 +9751,7 @@ body::-webkit-scrollbar-thumb {
   width: 52.3125px;
 }
 .slots-panel__currency-choose-panel {
-  background: url(https://www.nimo.tv/nms/images/currency-choose-bg.38becaec7a1953ced94ca4889a2cb7c6.png)
+  background: url(//www.nimo.tv/nms/images/currency-choose-bg.38becaec7a1953ced94ca4889a2cb7c6.png)
     no-repeat 50%/100% 100%;
   box-sizing: border-box;
   height: 43.875px;
@@ -9764,14 +9764,14 @@ body::-webkit-scrollbar-thumb {
   width: 21.9375px;
 }
 .slots-panel__recharge-btn {
-  background: url(https://www.nimo.tv/nms/images/recharge-btn.c8e018d7cd7b35f40b6abd391fa806e9.png)
+  background: url(//www.nimo.tv/nms/images/recharge-btn.c8e018d7cd7b35f40b6abd391fa806e9.png)
     no-repeat 50%/100% 100%;
   height: 27px;
   right: 0;
   width: 27px;
 }
 .slots-panel__recharge-btn:active {
-  background-image: url(https://www.nimo.tv/nms/images/recharge-btn-active.a07c91875be99e6a861a96af84824760.png);
+  background-image: url(//www.nimo.tv/nms/images/recharge-btn-active.a07c91875be99e6a861a96af84824760.png);
 }
 .slots-panel__prize-pool-num {
   height: 67.5px;
@@ -9802,7 +9802,7 @@ body::-webkit-scrollbar-thumb {
   margin-left: 1.6875px;
 }
 .slots-panel__prize-pool-num_mask {
-  background: url(https://www.nimo.tv/nms/images/prize-pool-num_mask.69ca820386b9a316082c805bb36a0a47.png)
+  background: url(//www.nimo.tv/nms/images/prize-pool-num_mask.69ca820386b9a316082c805bb36a0a47.png)
     no-repeat 50%/100% 100%;
   height: 100%;
   left: 0;
@@ -9813,24 +9813,24 @@ body::-webkit-scrollbar-thumb {
   margin: 8.4375px -5.0625px 0;
 }
 .slots-panel__winner-btn {
-  background: url(https://www.nimo.tv/nms/images/winner-icon.1701f129d5b8559ece241568be69a0ce.png)
+  background: url(//www.nimo.tv/nms/images/winner-icon.1701f129d5b8559ece241568be69a0ce.png)
     no-repeat 50%/100% 100%;
   height: 25.3125px;
   margin: 0 5.0625px;
   width: 40.5px;
 }
 .slots-panel__winner-btn:active {
-  background-image: url(https://www.nimo.tv/nms/images/winner-icon-active.794c50390ee4a28b59a2a9a4d4fe176b.png);
+  background-image: url(//www.nimo.tv/nms/images/winner-icon-active.794c50390ee4a28b59a2a9a4d4fe176b.png);
 }
 .slots-panel__record-btn {
-  background: url(https://www.nimo.tv/nms/images/record-icon.28a4dbec72b0ec5dafad7eb46f38f435.png)
+  background: url(//www.nimo.tv/nms/images/record-icon.28a4dbec72b0ec5dafad7eb46f38f435.png)
     no-repeat 50%/100% 100%;
   height: 25.3125px;
   margin: 0 5.0625px;
   width: 40.5px;
 }
 .slots-panel__record-btn:active {
-  background-image: url(https://www.nimo.tv/nms/images/record-icon-active.55a113e373fde28f38f423e9941e1e92.png);
+  background-image: url(//www.nimo.tv/nms/images/record-icon-active.55a113e373fde28f38f423e9941e1e92.png);
 }
 .slots-panel__modal {
   width: auto !important;
@@ -9890,13 +9890,13 @@ body::-webkit-scrollbar-thumb {
   height: 74.25px;
   margin-bottom: 8.4375px;
   opacity: 0;
-  -webkit-transition: opacity 0.00001s ease-in-out;
-  transition: opacity 0.00001s ease-in-out;
+  -webkit-transition: opacity 0.1s ease-in-out;
+  transition: opacity 0.1s ease-in-out;
   width: 74.25px;
 }
 .screen-area__icon.zoom {
-  -webkit-animation: zoom 0.00001s ease-in 0.00001s 2;
-  animation: zoom 0.00001s ease-in 0.00001s 2;
+  -webkit-animation: zoom 0.6s ease-in 0s 2;
+  animation: zoom 0.6s ease-in 0s 2;
 }
 .screen-area__icon.show {
   opacity: 1;
@@ -9905,19 +9905,19 @@ body::-webkit-scrollbar-thumb {
   margin-top: -6.75px;
 }
 .screen-area__icon-bg {
-  background-image: url(https://www.nimo.tv/nms/images/blue_bg.0ba1120928dd6462611182e26b7a7b12.png);
+  background-image: url(//www.nimo.tv/nms/images/blue_bg.0ba1120928dd6462611182e26b7a7b12.png);
   background-repeat: no-repeat;
   background-size: contain;
   height: 74.25px;
   margin-top: -6.75px;
   opacity: 0;
-  -webkit-transition: opacity 0.00001s ease-in-out;
-  transition: opacity 0.00001s ease-in-out;
+  -webkit-transition: opacity 0.1s ease-in-out;
+  transition: opacity 0.1s ease-in-out;
   width: 74.25px;
   z-index: -1;
 }
 .screen-area__icon-bg.yellow {
-  background-image: url(https://www.nimo.tv/nms/images/yelloe_bg.98f12257e5f48c25a45e9228a9191d61.png);
+  background-image: url(//www.nimo.tv/nms/images/yelloe_bg.98f12257e5f48c25a45e9228a9191d61.png);
 }
 .screen-area__icon-bg.show {
   opacity: 1;
@@ -9929,22 +9929,22 @@ body::-webkit-scrollbar-thumb {
   transition-property: transform, -webkit-transform;
 }
 .screen-area__animation-container.speed-up {
-  -webkit-transition-duration: 0.00001s!important;
-  transition-duration: 0.00001s!important;
-  -webkit-transition-timing-function: cubic-bezier(0, 1, 0, 1)!important;
-  transition-timing-function: cubic-bezier(0, 1, 0, 1)!important;
+  -webkit-transition-duration: 0.6s;
+  transition-duration: 0.6s;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
 }
 .screen-area__animation-container.slow-down {
-  -webkit-transition-duration: 0.00001s!important;
-  transition-duration: 0.00001s!important;
-  -webkit-transition-timing-function: cubic-bezier(0, 1, 0, 1)!important;
-  transition-timing-function: cubic-bezier(0, 1, 0, 1)!important;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.83, 0.79, 0.96);
+  transition-timing-function: cubic-bezier(0, 0.83, 0.79, 0.96);
 }
 .screen-area__animation-container.uniform-speed {
-  -webkit-transition-duration: 0.00001s!important;
-  transition-duration: 0.00001s!important;
-  -webkit-transition-timing-function: cubic-bezier(0, 1, 0, 1)!important;
-  transition-timing-function: cubic-bezier(0, 1, 0, 1)!important;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
 }
 @-webkit-keyframes zoom {
   0% {
@@ -10014,24 +10014,24 @@ body::-webkit-scrollbar-thumb {
   margin-top: 5.0625px;
 }
 .control-area__plus-btn {
-  background: url(https://www.nimo.tv/nms/images/bet-plus.9f6746752628e82c588129ae69786e62.png)
+  background: url(//www.nimo.tv/nms/images/bet-plus.9f6746752628e82c588129ae69786e62.png)
     no-repeat 50%/100% 100%;
   height: 27px;
   width: 57.375px;
 }
 .control-area__plus-btn.disabled,
 .control-area__plus-btn:active {
-  background-image: url(https://www.nimo.tv/nms/images/bet-plus-active.5f86a3b70227318b7937d6abf01fa6fe.png);
+  background-image: url(//www.nimo.tv/nms/images/bet-plus-active.5f86a3b70227318b7937d6abf01fa6fe.png);
 }
 .control-area__minus-btn {
-  background: url(https://www.nimo.tv/nms/images/bet-minus.fe1b8100bf67ca11a5b11397fd1be1aa.png)
+  background: url(//www.nimo.tv/nms/images/bet-minus.fe1b8100bf67ca11a5b11397fd1be1aa.png)
     no-repeat 50%/100% 100%;
   height: 27px;
   width: 57.375px;
 }
 .control-area__minus-btn.disabled,
 .control-area__minus-btn:active {
-  background-image: url(https://www.nimo.tv/nms/images/bet-minus-active.bed757bf2bfa4a9059b27ac4fbbf746f.png);
+  background-image: url(//www.nimo.tv/nms/images/bet-minus-active.bed757bf2bfa4a9059b27ac4fbbf746f.png);
 }
 .control-area__win-num-box {
   height: 96.1875px;
@@ -10048,7 +10048,7 @@ body::-webkit-scrollbar-thumb {
   width: 114.75px;
 }
 .control-area__bet-btn {
-  background: url(https://www.nimo.tv/nms/images/bet-btn.0804888fb8b87eea2d7e544908767037.png)
+  background: url(//www.nimo.tv/nms/images/bet-btn.0804888fb8b87eea2d7e544908767037.png)
     no-repeat 50%/100% 100%;
   height: 50.625px;
   margin-top: 5.0625px;
@@ -10056,7 +10056,7 @@ body::-webkit-scrollbar-thumb {
   width: 123.1875px;
 }
 .control-area__bet-btn:active {
-  background-image: url(https://www.nimo.tv/nms/images/bet-btn-active.c6b9e297d34a916bdc0a7db525d8dff6.png);
+  background-image: url(//www.nimo.tv/nms/images/bet-btn-active.c6b9e297d34a916bdc0a7db525d8dff6.png);
   padding-bottom: 0;
 }
 .control-area__bet-btn .nimo-image img {
@@ -10218,31 +10218,28 @@ body::-webkit-scrollbar-thumb {
   display: none;
 }
 .slot-win-animation.status-1 {
-  height: 0;
+  height: 548.4375px;
 }
 .slot-win-animation.status-2 {
-  height: 0;
+  height: 575.4375px;
 }
 .slot-win-animation__svga {
   bottom: 0;
   left: 0;
   right: 0;
   top: 0;
-  display: none!important;
 }
 .slot-win-animation__win-num {
-  display: none;
-  -webkit-animation: zoomNum 0.00001s ease -5s!important;
-  animation: zoomNum 0.00001s ease -5s!important;
-  -webkit-animation-fill-mode: forwards ;
-  animation-fill-mode: forwards ;
+  -webkit-animation: zoomNum 0.8s ease-in-out 1;
+  animation: zoomNum 0.8s ease-in-out 1;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
   color: #fed302;
   font-size: 57.375px;
   margin-top: 27px;
 }
 .slot-win-animation.status-2 .slot-win-animation__win-num {
   margin-top: 57.375px;
-  display: none;
 }
 @-webkit-keyframes zoomNum {
   0% {
@@ -10296,7 +10293,7 @@ body::-webkit-scrollbar-thumb {
   margin-left: 3.375px;
 }
 .slots-jackpot__btn {
-  background: url(https://www.nimo.tv/nms/images/bet-btn.0804888fb8b87eea2d7e544908767037.png)
+  background: url(//www.nimo.tv/nms/images/bet-btn.0804888fb8b87eea2d7e544908767037.png)
     no-repeat 50%/100% 100%;
   height: 50.625px;
   margin-top: 23.625px;
@@ -10304,7 +10301,7 @@ body::-webkit-scrollbar-thumb {
   width: 123.1875px;
 }
 .slots-jackpot__btn:active {
-  background-image: url(https://www.nimo.tv/nms/images/bet-btn-active.c6b9e297d34a916bdc0a7db525d8dff6.png);
+  background-image: url(//www.nimo.tv/nms/images/bet-btn-active.c6b9e297d34a916bdc0a7db525d8dff6.png);
   padding-bottom: 0;
 }
 .slots-jackpot__btn-text {
@@ -10736,7 +10733,7 @@ body::-webkit-scrollbar-thumb {
   width: 45.5625px;
 }
 .nimo-box-lottery__modal-bg1 {
-  background-image: url(https://www.nimo.tv/nms/images/modal1.3a1ec5c3d343cb53b667626cde54b520.png);
+  background-image: url(//www.nimo.tv/nms/images/modal1.3a1ec5c3d343cb53b667626cde54b520.png);
   background-repeat: no-repeat;
   background-size: contain;
   height: 27px;
@@ -10744,7 +10741,7 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
 }
 .nimo-box-lottery__modal-bg2 {
-  background-image: url(https://www.nimo.tv/nms/images/modal2.91bb70eb355772aeee93391dd3af7ad7.png);
+  background-image: url(//www.nimo.tv/nms/images/modal2.91bb70eb355772aeee93391dd3af7ad7.png);
   background-repeat: repeat-y;
   background-size: contain;
   margin-top: -3.375px;
@@ -10752,7 +10749,7 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
 }
 .nimo-box-lottery__modal-bg3 {
-  background-image: url(https://www.nimo.tv/nms/images/modal3.42c0ddea3887d6f8514eb0af93e42d2c.png);
+  background-image: url(//www.nimo.tv/nms/images/modal3.42c0ddea3887d6f8514eb0af93e42d2c.png);
   background-repeat: no-repeat;
   background-size: contain;
   height: 109.6875px;
@@ -10763,7 +10760,7 @@ body::-webkit-scrollbar-thumb {
   display: none;
 }
 .GoldBeanRecord__header {
-  background-image: url(https://www.nimo.tv/nms/images/gold_bean_record_bg1.d1848d02c08d27b108b463a59ce69c08.png);
+  background-image: url(//www.nimo.tv/nms/images/gold_bean_record_bg1.d1848d02c08d27b108b463a59ce69c08.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   box-sizing: border-box;
@@ -10800,7 +10797,7 @@ body::-webkit-scrollbar-thumb {
   white-space: nowrap;
 }
 .GoldBeanRecord__body {
-  background-image: url(https://www.nimo.tv/nms/images/gold_bean_record_bg2.e5d2deeca3e2a70a238313a8c3ca1b0a.png);
+  background-image: url(//www.nimo.tv/nms/images/gold_bean_record_bg2.e5d2deeca3e2a70a238313a8c3ca1b0a.png);
   background-repeat: repeat-y;
   background-size: contain;
   box-sizing: border-box;
@@ -10810,7 +10807,7 @@ body::-webkit-scrollbar-thumb {
   width: 540px;
 }
 .GoldBeanRecord__body:before {
-  background-image: url(https://www.nimo.tv/nms/images/gold_bean_record_bg3.da84567bafc45717f546ddfbd9bc1e77.png);
+  background-image: url(//www.nimo.tv/nms/images/gold_bean_record_bg3.da84567bafc45717f546ddfbd9bc1e77.png);
   background-repeat: no-repeat;
   background-size: contain;
   bottom: 0;
@@ -10850,7 +10847,7 @@ body::-webkit-scrollbar-thumb {
   width: 23.625px;
 }
 .GoldBeanRecord__currency.diamond-icon .chips {
-  background-image: url(https://www.nimo.tv/nms/images/icon-diamond.06cc43c6df326c45f06ad36266a82d21.png);
+  background-image: url(//www.nimo.tv/nms/images/icon-diamond.06cc43c6df326c45f06ad36266a82d21.png);
 }
 .rank-entry {
   cursor: pointer;
@@ -10875,7 +10872,7 @@ body::-webkit-scrollbar-thumb {
   width: 45.5625px;
 }
 .rank-entry .avater-box {
-  background-image: url(https://www.nimo.tv/nms/images/rank-entry-avater-box.e6ce4415af58b7e769b2e6e1a708d6d1.png);
+  background-image: url(//www.nimo.tv/nms/images/rank-entry-avater-box.e6ce4415af58b7e769b2e6e1a708d6d1.png);
   background-size: 100% 100%;
   height: 100%;
   left: 0;
@@ -10907,7 +10904,7 @@ body::-webkit-scrollbar-thumb {
   padding: 0;
 }
 .slots-game-rank__modal .rank-panel {
-  background-image: url(https://www.nimo.tv/nms/images/rank-panel-bg.c8e14b7d2ab580ff91cf09b455f9c080.png);
+  background-image: url(//www.nimo.tv/nms/images/rank-panel-bg.c8e14b7d2ab580ff91cf09b455f9c080.png);
   background-size: 100% 100%;
   height: 663.1875px;
   width: 474.1875px;
@@ -10947,7 +10944,7 @@ body::-webkit-scrollbar-thumb {
   -webkit-box-align: center;
   -webkit-align-items: center;
   align-items: center;
-  background-image: url(https://www.nimo.tv/nms/images/rank-panel-tab.9f480367605c8302bf30155758a09a33.png);
+  background-image: url(//www.nimo.tv/nms/images/rank-panel-tab.9f480367605c8302bf30155758a09a33.png);
   background-size: 100% 100%;
   color: #fff;
   cursor: pointer;
@@ -10965,14 +10962,14 @@ body::-webkit-scrollbar-thumb {
   width: 183.9375px;
 }
 .slots-game-rank__modal .rank-panel .nimo-ssp-tabs .nimo-ssp-tab.on {
-  background-image: url(https://www.nimo.tv/nms/images/rank-panel-tab-on.4c67f6622d4d5321bc730a9789973442.png);
+  background-image: url(//www.nimo.tv/nms/images/rank-panel-tab-on.4c67f6622d4d5321bc730a9789973442.png);
   margin-top: -8.4375px;
 }
 .slots-game-rank__modal .rank-panel .nimo-ssp-tabs .nimo-ssp-tab .text {
   padding: 0 8.4375px;
 }
 .slots-game-rank__modal .rank-panel .rank-wrap {
-  background-image: url(https://www.nimo.tv/nms/images/rank-entry-box-bg.7d7a8f8846ef3bf083aa5857e52c4887.png);
+  background-image: url(//www.nimo.tv/nms/images/rank-entry-box-bg.7d7a8f8846ef3bf083aa5857e52c4887.png);
   background-size: 100% 100%;
   height: 448.875px;
   margin: -10.125px auto auto;
@@ -10982,7 +10979,7 @@ body::-webkit-scrollbar-thumb {
   z-index: 2;
 }
 .slots-game-rank__modal .rank-panel .rank-wrap .top1 {
-  background-image: url(https://www.nimo.tv/nms/images/rank-panel-top1-bg.a08ec0ac69bfaa31cab30230bccaf299.png);
+  background-image: url(//www.nimo.tv/nms/images/rank-panel-top1-bg.a08ec0ac69bfaa31cab30230bccaf299.png);
   background-size: 100% 100%;
   height: 190.6875px;
   width: 393.1875px;
@@ -11021,7 +11018,7 @@ body::-webkit-scrollbar-thumb {
   top: -3.375px;
 }
 .slots-game-rank__modal .rank-panel .rank-wrap .top1 .scroe-box {
-  background-image: url(https://www.nimo.tv/nms/images/rank-panel-top1-title-bg.b08e939edc231c6b1fb40ab765e1025f.png);
+  background-image: url(//www.nimo.tv/nms/images/rank-panel-top1-title-bg.b08e939edc231c6b1fb40ab765e1025f.png);
   background-size: 100% 100%;
   height: 57.375px;
   width: 239.625px;
@@ -11062,7 +11059,7 @@ body::-webkit-scrollbar-thumb {
   .rank-wrap
   .nimo-rank2-list-main
   .nimo-rank2-item {
-  background-image: url(https://www.nimo.tv/nms/images/rank-panel-item.ebe44216dfc27870b898f7bd76395542.png);
+  background-image: url(//www.nimo.tv/nms/images/rank-panel-item.ebe44216dfc27870b898f7bd76395542.png);
   background-size: 100% 100%;
   height: 65.8125px;
   padding: 0 16.875px;
@@ -11073,7 +11070,7 @@ body::-webkit-scrollbar-thumb {
   .rank-wrap
   .nimo-rank2-list-main
   .nimo-rank2-item.top {
-  background-image: url(https://www.nimo.tv/nms/images/rank-panel-top-item.136820b5c5559a6b5587824feaa5a3fd.png);
+  background-image: url(//www.nimo.tv/nms/images/rank-panel-top-item.136820b5c5559a6b5587824feaa5a3fd.png);
 }
 .slots-game-rank__modal
   .rank-panel
@@ -11104,7 +11101,7 @@ body::-webkit-scrollbar-thumb {
   .nimo-rank2-list-main
   .nimo-rank2-item.top
   .nimo-author-avatar:after {
-  background-image: url(https://www.nimo.tv/nms/images/rank-panel-top-avater-box.c18d8bad461516408398a29c76cdd824.png);
+  background-image: url(//www.nimo.tv/nms/images/rank-panel-top-avater-box.c18d8bad461516408398a29c76cdd824.png);
 }
 .slots-game-rank__modal
   .rank-panel
@@ -11133,7 +11130,7 @@ body::-webkit-scrollbar-thumb {
   .nimo-rank2-list-main
   .nimo-rank2-item.No2
   .nimo-rank2-item-num {
-  background-image: url(https://www.nimo.tv/nms/images/rank-panel-no2.e78f6bd8386637b4488c804f308eb4b6.png);
+  background-image: url(//www.nimo.tv/nms/images/rank-panel-no2.e78f6bd8386637b4488c804f308eb4b6.png);
 }
 .slots-game-rank__modal
   .rank-panel
@@ -11141,7 +11138,7 @@ body::-webkit-scrollbar-thumb {
   .nimo-rank2-list-main
   .nimo-rank2-item.No3
   .nimo-rank2-item-num {
-  background-image: url(https://www.nimo.tv/nms/images/rank-panel-no3.32a0b5eb10b188930843e372cb60c01f.png);
+  background-image: url(//www.nimo.tv/nms/images/rank-panel-no3.32a0b5eb10b188930843e372cb60c01f.png);
 }
 .slots-game-rank__modal
   .rank-panel
@@ -11179,7 +11176,7 @@ body::-webkit-scrollbar-thumb {
   .nimo-rank2-list-main
   .nimo-rank2-item
   .nimo-author-avatar:after {
-  background-image: url(https://www.nimo.tv/nms/images/rank-panel-avater-box.28fd741b948747f0574bdc258cf71206.png);
+  background-image: url(//www.nimo.tv/nms/images/rank-panel-avater-box.28fd741b948747f0574bdc258cf71206.png);
   background-size: 100% 100%;
   content: "";
   display: block;
@@ -11243,7 +11240,7 @@ body::-webkit-scrollbar-thumb {
   margin-right: 5.0625px;
 }
 .slots-game-rank__modal .rank-panel .me {
-  background-image: url(https://www.nimo.tv/nms/images/rank-panel-me.6754adef5854ffd247002fbded5b280d.png);
+  background-image: url(//www.nimo.tv/nms/images/rank-panel-me.6754adef5854ffd247002fbded5b280d.png);
   background-size: 100% 100%;
   height: 49.95px;
   left: 8.4375px;
@@ -11263,7 +11260,7 @@ body::-webkit-scrollbar-thumb {
   width: 30.375px;
 }
 .slots-game-rank__modal .rank-panel .me .avater:after {
-  background-image: url(https://www.nimo.tv/nms/images/rank-panel-me-avater-box.2c91ea30e29f5ca9fffe20f15ec5ba99.png);
+  background-image: url(//www.nimo.tv/nms/images/rank-panel-me-avater-box.2c91ea30e29f5ca9fffe20f15ec5ba99.png);
   background-size: 100% 100%;
   content: "";
   display: block;
@@ -11301,7 +11298,7 @@ body::-webkit-scrollbar-thumb {
   font-size: 25.3125px;
 }
 .auto-transform-modal__trans-img {
-  background: url(https://www.nimo.tv/nms/images/trans-bg.7e1279d0ab30ced09960bf873b3ced73.png)
+  background: url(//www.nimo.tv/nms/images/trans-bg.7e1279d0ab30ced09960bf873b3ced73.png)
     no-repeat 50%/100% 100%;
   direction: ltr;
   height: 101.25px;
@@ -11399,7 +11396,7 @@ body::-webkit-scrollbar-thumb {
   color: #c28f32;
 }
 .game-promote-btn {
-  background: url(https://www.nimo.tv/nms/c05b770db8345a1a0f9ebbf4548dd113.svg)
+  background: url(//www.nimo.tv/nms/c05b770db8345a1a0f9ebbf4548dd113.svg)
     no-repeat;
   background-size: 100% auto;
   height: 52.3125px;
